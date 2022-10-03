@@ -11,7 +11,7 @@ int main()
 	//How many we have sold
 	int Srooms = 0, Spasta = 0, Sburger = 0, Snoodles = 0, Sshake = 0, Schicken = 0;
 	// Price
-	int Total_rooms = 0, Total_pasta = 0, Total_burger = 0, Total_noodles = 0, Total_shake = 0, Total_Chicken = 0;
+	int Total_rooms = 0, Total_pasta = 0, Total_burger = 0, Total_noodles = 0, Total_shake = 0, Total_chicken = 0;
 
 	//This prompts the user to get the initial quantity of each
 	cout << "\n \t Quantity of Items We Have";
@@ -132,7 +132,7 @@ int main()
 			if (Qchicken - Schicken >= quant)
 			{
 				Schicken = Schicken + quant;
-				Total_Chicken = Total_Chicken + quant * 150; //Line Contains Price
+				Total_chicken = Total_chicken + quant * 150; //Line Contains Price
 				cout << "\n \n \t \t" << quant << " Chicken Parmesan have been added to the order.";
 			}
 			else
@@ -172,7 +172,7 @@ int main()
 			cout << "\n \n Initial Number of Chicken Parmesan: " << Qchicken; //Chicken Details
 			cout << "\n \n Number of Chicken Parmesan Sold: " << Schicken;
 			cout << "\n \n Number of Chicken Parmesan Remaining: " << Qchicken - Schicken;
-			cout << "\n \n Total Collected for Chicken Parmesan Today: $" << Total_Chicken;
+			cout << "\n \n Total Collected for Chicken Parmesan Today: $" << Total_chicken;
 
 
 
