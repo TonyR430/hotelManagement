@@ -63,17 +63,17 @@ int main()
 
 		//Pasta Dishes
 		case 2:
-			cout << "Enter Number of Pasta Dishes Requested: ";
+			cout << "Enter Number of Pasta Bowls Requested: ";
 			cin >> quant;
 			if (Qpasta - Spasta >= quant)
 			{
 				Spasta = Spasta + quant;
 				Total_pasta = Total_pasta + quant * 250; //Line Contains Price
-				cout << "\n \n \t \t" << quant << " Pasta Dishes have been added to the order.";
+				cout << "\n \n \t \t" << quant << " Pasta Bowls have been added to the order.";
 			}
 			else
 			{
-				cout << "\n \t Only " << Qpasta - Spasta << " Pasta Dishes are available at this time";
+				cout << "\n \t Only " << Qpasta - Spasta << " Pasta Bowls are available at this time";
 				break;
 			}
 
@@ -140,6 +140,41 @@ int main()
 				cout << "\n \t Only " << Qchicken - Schicken << " Chicken Parmesan are available at this time";
 				break;
 			}
+
+		//Sales and Collection
+		case 7:
+			cout << "\n \t \t Details of ssales and selection";// Room Details
+			cout << "\n \n Initial Number of Rooms: " << Qrooms;
+			cout << "\n \n Number or rooms rented: " << Srooms;
+			cout << "\n \n Number of rooms remaining: " << Qrooms - Srooms;
+			cout << "\n \n Total Collected or Rooms Roday: $" << Total_rooms;
+
+			cout << "\n \n Initial Number of Pasta Bowls: " << Qpasta; // Pasta Details
+			cout << "\n \n Number of Pasta Bowls sold: " << Spasta;
+			cout << "\n \n Number of Pasta Bowls Remaining: " << Qpasta - Spasta;
+			cout << "\n \n Total colected for Pasta Bowls Today: $" << Total_pasta;
+
+			cout << "\n \n Initial Number of Burgers: " << Qburger; //Burger Details
+			cout << "\n \n Number of Burgers Sold: " << Sburger;
+			cout << "\n \n Number of Burgers Remaining: " << Qburger - Sburger;
+			cout << "\n \n Total Collected for Burgers Today: $" << Total_burger;
+
+			cout << "\n \n Initial Number of Noodle Bowls: " << Qnoodles; // Noodle Bowl Details
+			cout << "\n \n Number of Noodle Bowls Sold: " << Snoodles;
+			cout << "\n \n Number of Noodle Bowls Remaining: " << Qnoodles - Snoodles;
+			cout << "\n \n Total Collected for Noodle Bowls Today: $" << Total_noodles;
+
+			cout << "\n \n Initial Number of Shakes: " << Qshake; //Shake Details
+			cout << "\n \n Number of Shakes Sold: " << Sshake;
+			cout << "\n \n Number of Shakes Remaining: " << Qshake - Sshake;
+			cout << "\n \n Total Collected for Shakes Today: $" << Total_shake;
+
+			cout << "\n \n Initial Number of Chicken Parmesan: " << Qchicken; //Chicken Details
+			cout << "\n \n Number of Chicken Parmesan Sold: " << Schicken;
+			cout << "\n \n Number of Chicken Parmesan Remaining: " << Qchicken - Schicken;
+			cout << "\n \n Total Collected for Chicken Parmesan Today: $" << Total_Chicken;
+
+
 
 	}
 
