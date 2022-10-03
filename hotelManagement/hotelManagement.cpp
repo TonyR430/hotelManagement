@@ -31,11 +31,11 @@ int main()
 	//This allows the customer to select what they wish to order
 	cout << "\n \t \t \t Please Select From The Menu Options: ";
 	cout << "\n \n 1)Rooms";
-	cout << "\n 2)Pasta";
+	cout << "\n 2)Pasta Bowl";
 	cout << "\n 3)Burger";
-	cout << "\n 4)Noodles";
+	cout << "\n 4)Noodle Bowl";
 	cout << "\n 5)Shake";
-	cout << "\n 6)Chicken";
+	cout << "\n 6)Chicken Parmesan";
 	cout << "\n 7)Information Regarding Sales and Collection";
 	cout << "\n 8)Exit";
 
@@ -45,18 +45,99 @@ int main()
 	//This handles the choice that the customer makes
 	switch (choice)
 	{
+		//Room
 		case 1:
 			cout << "Enter Number of Rooms Requested: ";
 			cin >> quant;
 			if (Qrooms - Srooms >= quant)
 			{
 				Srooms = Srooms + quant;
-				Total_rooms = Total_rooms + quant * 1200;
-				cout << "\n \n \t \t" << quant << " room/rooms have been assigned to you."
+				Total_rooms = Total_rooms + quant * 1200; //Line Contains Price
+				cout << "\n \n \t \t" << quant << " room/rooms have been assigned to you.";
 			}
 			else
 			{
 				cout << "\n \t Only " << Qrooms - Srooms << " rooms are available at this time";
+				break;
+			}
+
+		//Pasta Dishes
+		case 2:
+			cout << "Enter Number of Pasta Dishes Requested: ";
+			cin >> quant;
+			if (Qpasta - Spasta >= quant)
+			{
+				Spasta = Spasta + quant;
+				Total_pasta = Total_pasta + quant * 250; //Line Contains Price
+				cout << "\n \n \t \t" << quant << " Pasta Dishes have been added to the order.";
+			}
+			else
+			{
+				cout << "\n \t Only " << Qpasta - Spasta << " Pasta Dishes are available at this time";
+				break;
+			}
+
+		//Burgers
+		case 3:
+			cout << "Enter Number of Burgers Requested: ";
+			cin >> quant;
+			if (Qburger - Sburger >= quant)
+			{
+				Sburger = Sburger + quant;
+				Total_burger = Total_burger + quant * 120; //Line Contains Price
+				cout << "\n \n \t \t" << quant << " Burgers have been added to the order.";
+			}
+			else
+			{
+				cout << "\n \t Only " << Qburger - Sburger << " Burgers are available at this time";
+				break;
+			}
+
+		//Noodle Bowls
+		case 4:
+			cout << "Enter Number of Noodle Bowls Requested: ";
+			cin >> quant;
+			if (Qnoodles - Snoodles >= quant)
+			{
+				Snoodles = Snoodles + quant;
+				Total_noodles = Total_noodles + quant * 140; //Line Contains Price
+				cout << "\n \n \t \t" << quant << " Noodle Bowls have been added to the order.";
+			}
+			else
+			{
+				cout << "\n \t Only " << Qnoodles - Snoodles << " Noodle Bowls are available at this time";
+				break;
+			}
+
+		//Shake
+		case 5:
+			cout << "Enter Number of Shakes Requested: ";
+			cin >> quant;
+			if (Qshake - Sshake >= quant)
+			{
+				Sshake = Sshake + quant;
+				Total_shake = Total_shake + quant * 120; //Line Contains Price
+				cout << "\n \n \t \t" << quant << " Shakes have been added to the order.";
+			}
+			else
+			{
+				cout << "\n \t Only " << Qshake - Sshake << " Shakes are available at this time";
+				break;
+			}
+
+		//Chicken Parmesan
+		case 6:
+			cout << "Enter Number of Chicken Parmesan Requested: ";
+			cin >> quant;
+			if (Qchicken - Schicken >= quant)
+			{
+				Schicken = Schicken + quant;
+				Total_Chicken = Total_Chicken + quant * 150; //Line Contains Price
+				cout << "\n \n \t \t" << quant << " Chicken Parmesan have been added to the order.";
+			}
+			else
+			{
+				cout << "\n \t Only " << Qchicken - Schicken << " Chicken Parmesan are available at this time";
 				break;
 			}
 
