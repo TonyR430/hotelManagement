@@ -28,6 +28,7 @@ int main()
 	cout << "\n \t Chicken Available: ";
 	cin >> Qchicken;
 
+	m: //Marks this as the menu
 	//This allows the customer to select what they wish to order
 	cout << "\n \t \t \t Please Select From The Menu Options: ";
 	cout << "\n \n 1)Rooms";
@@ -174,8 +175,18 @@ int main()
 			cout << "\n \n Number of Chicken Parmesan Remaining: " << Qchicken - Schicken;
 			cout << "\n \n Total Collected for Chicken Parmesan Today: $" << Total_chicken;
 
+			cout << "\n \n Total Sales for the Day: $" << Total_rooms + Total_pasta + Total_burger + Total_noodles + Total_shake + Total_chicken; // Total Sales of day
+
+		case 8:
+			exit(0);
+
+		default:
+			cout << "Invalid Selection, Please Select a Menu option Listed.";
+
 
 
 	}
+
+	goto m; // Returns the user to the menu after making a choice
 
 }
