@@ -44,7 +44,7 @@ int main()
 	cin >> choice;
 
 	//This handles the choice that the customer makes
-	switch (choice)
+	switch (choice)  //There is currently an error in this statement, added to troubleshoot
 	{
 		//Room
 		case 1:
@@ -148,7 +148,7 @@ int main()
 			cout << "\n \n Initial Number of Rooms: " << Qrooms;
 			cout << "\n \n Number or rooms rented: " << Srooms;
 			cout << "\n \n Number of rooms remaining: " << Qrooms - Srooms;
-			cout << "\n \n Total Collected or Rooms Roday: $" << Total_rooms;
+			cout << "\n \n Total Collected or Rooms Today: $" << Total_rooms;
 
 			cout << "\n \n Initial Number of Pasta Bowls: " << Qpasta; // Pasta Details
 			cout << "\n \n Number of Pasta Bowls sold: " << Spasta;
