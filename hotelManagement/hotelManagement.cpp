@@ -150,7 +150,7 @@ int main()
 
 		//Sales and Collection
 		case 7:
-			cout << "\n \t \t Details of ssales and selection";// Room Details
+			cout << "\n \t \t Details of Sales and Selection";// Room Details
 			cout << "\n Initial Number of Rooms: " << Qrooms;
 			cout << "\n Number or rooms rented: " << Srooms;
 			cout << "\n Number of rooms remaining: " << Qrooms - Srooms;
