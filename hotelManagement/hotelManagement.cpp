@@ -55,6 +55,7 @@ int main()
 				Srooms = Srooms + quant;
 				Total_rooms = Total_rooms + quant * 1200; //Line Contains Price
 				cout << "\n \n \t \t" << quant << " room/rooms have been assigned to you.";
+				break;
 			}
 			else
 			{
@@ -71,6 +72,7 @@ int main()
 				Spasta = Spasta + quant;
 				Total_pasta = Total_pasta + quant * 250; //Line Contains Price
 				cout << "\n \n \t \t" << quant << " Pasta Bowls have been added to the order.";
+				break;
 			}
 			else
 			{
@@ -87,6 +89,7 @@ int main()
 				Sburger = Sburger + quant;
 				Total_burger = Total_burger + quant * 120; //Line Contains Price
 				cout << "\n \n \t \t" << quant << " Burgers have been added to the order.";
+				break;
 			}
 			else
 			{
@@ -103,6 +106,7 @@ int main()
 				Snoodles = Snoodles + quant;
 				Total_noodles = Total_noodles + quant * 140; //Line Contains Price
 				cout << "\n \n \t \t" << quant << " Noodle Bowls have been added to the order.";
+				break;
 			}
 			else
 			{
@@ -119,6 +123,7 @@ int main()
 				Sshake = Sshake + quant;
 				Total_shake = Total_shake + quant * 120; //Line Contains Price
 				cout << "\n \n \t \t" << quant << " Shakes have been added to the order.";
+				break;
 			}
 			else
 			{
@@ -135,6 +140,7 @@ int main()
 				Schicken = Schicken + quant;
 				Total_chicken = Total_chicken + quant * 150; //Line Contains Price
 				cout << "\n \n \t \t" << quant << " Chicken Parmesan have been added to the order.";
+				break;
 			}
 			else
 			{
@@ -176,6 +182,7 @@ int main()
 			cout << "\n \n Total Collected for Chicken Parmesan Today: $" << Total_chicken;
 
 			cout << "\n \n Total Sales for the Day: $" << Total_rooms + Total_pasta + Total_burger + Total_noodles + Total_shake + Total_chicken; // Total Sales of day
+			break;
 
 		case 8:
 			exit(0);
