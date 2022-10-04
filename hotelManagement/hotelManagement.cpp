@@ -181,14 +181,14 @@ int main()
 			cout << "\n Number of Chicken Parmesan Remaining: " << Qchicken - Schicken;
 			cout << "\n Total Collected for Chicken Parmesan Today: $" << Total_chicken;
 
-			cout << "\n Total Sales for the Day: $" << Total_rooms + Total_pasta + Total_burger + Total_noodles + Total_shake + Total_chicken; // Total Sales of day
+			cout << "\n Total Sales for the Day: $" << Total_rooms + Total_pasta + Total_burger + Total_noodles + Total_shake + Total_chicken << "\n \n"; // Total Sales of day
 			break;
 
 		case 8:
 			exit(0);
 
 		default:
-			cout << "Invalid Selection, Please Select a Menu option Listed.";
+			cout << "Invalid Selection, Please Select a Menu option Listed.\n";
 
 
 
