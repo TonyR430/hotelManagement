@@ -28,7 +28,7 @@ int main()
 	cout << "\n \t Chicken Available: ";
 	cin >> Qchicken;
 
-	m: //Marks this as the menu
+	m: //Marks this as the menu so the customer is returned at the end
 	//This allows the customer to select what they wish to order
 	cout << "\n \t \t \t Please Select From The Menu Options: ";
 	cout << "\n \n 1)Rooms";
