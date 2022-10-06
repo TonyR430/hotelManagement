@@ -1,4 +1,5 @@
-//Hotel Management Program from Youtube to get back into practice
+//Hotel Management Program from Youtube to get back into practice, as of 10.6.2022 added total daily sales. Next will add breakdown to show breakdown of how much each room/food
+// tray makes and add place to input cost of each item so can view profit.
 #include <iostream>
 using namespace std;
 
